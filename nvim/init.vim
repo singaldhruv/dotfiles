@@ -1,17 +1,12 @@
+" https://ejmastnak.com/tutorials/vim-latex/
+
 call plug#begin()
 
 " Track the engine.
 Plug 'SirVer/ultisnips'
 
-" Snippets are separated from the engine. Add this if you want them:
-Plug 'honza/vim-snippets'
-
-" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
+let g:UltiSnipsExpandTrigger       = '<Tab>'    " use Tab to expand snippets
+let g:UltiSnipsJumpForwardTrigger  = '<Tab>'    " use Tab to move forward through tabstops
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'  " use Shift-Tab to move backward through tabstops
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']  
 call plug#end()
