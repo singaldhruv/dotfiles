@@ -3,4 +3,5 @@
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
-ln -s ${PWD}/bashrc ~/.bashrc
+ln -sf ${PWD}/zshrc ~/.zshrc
+ln -sf ${PWD}/gitconfig ~/.gitconfig
