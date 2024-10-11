@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Ref: https://missing.csail.mit.edu/2019/dotfiles/
+BASEDIR=$(dirname $0)
+cd $BASEDIR
+
+ln -s ${PWD}/bashrc ~/.bashrc
